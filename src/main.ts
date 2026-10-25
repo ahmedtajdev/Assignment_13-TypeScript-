@@ -152,7 +152,7 @@ class Storage<T> {
   }
   removeItem(item: T): void {
     const index = this.items.indexOf(item);
-    this.items = this.items.splice(index, 1);
+    this.items.splice(index, 1);
     console.log(`Item removed successfully`);
   }
   getAllItems(): Array<T> {
